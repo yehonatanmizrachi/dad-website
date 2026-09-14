@@ -42,5 +42,5 @@ After the domain is live, set absolute URLs in `index.html` for `og:image` and a
 ## Image credits
 
 Nature photos from Unsplash (Unsplash License — free for commercial use):
-hero succulent (JTmnBciSZX8, Marek Piwnicki), valley (Vlw4DzpUkKg), sea (4kV7qlK1EeY).
+sheer curtain (k1-bP44Ds28), desert dunes (fjdva5qbnpA), dune ridge (ZcVd6rcHSbg).
 Portrait, book cover and video thumbnails are from Sharon's own site/channel.
