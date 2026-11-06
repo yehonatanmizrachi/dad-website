@@ -42,7 +42,7 @@
 
   // Active nav link (method sections count as "approach")
   const links = [...list.querySelectorAll("a")];
-  const navTarget = { cbt: "approach", emr: "approach", biofeedback: "approach" };
+  const navTarget = { cbt: "approach", emr: "approach", biofeedback: "approach", trauma: "approach" };
   const spy = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
@@ -54,20 +54,6 @@
     });
   }, { rootMargin: "-45% 0px -50% 0px" });
   document.querySelectorAll("main > section[id]").forEach((s) => spy.observe(s));
-
-  // Lite YouTube: load the iframe only on click
-  document.querySelectorAll(".video[data-yt]").forEach((btn) => {
-    btn.setAttribute("aria-label", `ניגון הסרטון: ${btn.querySelector(".video__title").textContent}`);
-    btn.addEventListener("click", () => {
-      const iframe = document.createElement("iframe");
-      iframe.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.yt}?autoplay=1&rel=0`;
-      iframe.title = btn.querySelector(".video__title").textContent;
-      iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
-      iframe.allowFullscreen = true;
-      btn.replaceChildren(iframe);
-      btn.removeAttribute("aria-label");
-    }, { once: true });
-  });
 
   // Contact form -> WhatsApp message
   const form = document.getElementById("wa-form");

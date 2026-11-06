@@ -1,6 +1,6 @@
 # sharon-mizrachi — landing page
 
-Single-page, static landing page (Hebrew, RTL) for Sharon Mizrachi — CBT, EMR and Biofeedback therapy.
+Single-page, static landing page (Hebrew, RTL) for Sharon Mizrachi — CBT, EMR, Biofeedback and trauma-focused therapy.
 No build step: plain `index.html`, `styles.css`, `main.js`.
 
 ## Run locally
@@ -32,8 +32,8 @@ After the domain is live, set absolute URLs in `index.html` for `og:image` and a
 | CBT            | `#cbt`          |
 | EMR            | `#emr`          |
 | Biofeedback    | `#biofeedback`  |
+| Trauma         | `#trauma`       |
 | Testimonials   | `#testimonials` |
-| Book & videos  | `#book`         |
 | Contact        | `#contact`      |
 
 - The contact form has no backend: it opens WhatsApp with a prefilled message.
@@ -42,5 +42,5 @@ After the domain is live, set absolute URLs in `index.html` for `og:image` and a
 ## Image credits
 
 Nature photos from Unsplash (Unsplash License — free for commercial use):
-hero succulent (JTmnBciSZX8, Marek Piwnicki), green valley (Vlw4DzpUkKg).
-Portrait, book cover and video thumbnails are from Sharon's own site/channel.
+green valley (Vlw4DzpUkKg).
+Portrait and hero image were provided by Sharon.
