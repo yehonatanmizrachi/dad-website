@@ -10,17 +10,14 @@ python -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Deploy (Vercel, free)
+## Deploy (Cloudflare)
 
-```sh
-npx vercel        # preview
-npx vercel --prod # production
-```
+Live at https://sharonmizrachi.com/ — Cloudflare builds from `main` on every push (no build command, output directory `/`).
 
-Or import the GitHub repo in the Vercel dashboard (framework preset: "Other", no build command).
-Custom domain: Vercel → Project → Settings → Domains.
-
-After the domain is live, set absolute URLs in `index.html` for `og:image` and add a `<link rel="canonical">`.
+- `_headers` — Cloudflare response headers (asset caching, `noindex` on `*.pages.dev` copies).
+- `robots.txt` / `sitemap.xml` — for search engines. Update `<lastmod>` in `sitemap.xml` after meaningful content changes.
+- SEO tags (canonical, Open Graph, schema.org JSON-LD) are in the `<head>` of `index.html` and use the full domain.
+- After changing `styles.css` or `main.js`, bump the `?v=` number on their links in `index.html` so returning visitors get the new file.
 
 ## Structure
 
@@ -36,7 +33,7 @@ After the domain is live, set absolute URLs in `index.html` for `og:image` and a
 | Testimonials   | `#testimonials` |
 | Contact        | `#contact`      |
 
-- The contact form has no backend: it opens WhatsApp with a prefilled message.
+- Contact is by WhatsApp (prefilled message) or phone; there is no form or backend.
 - WhatsApp number lives in `main.js` (`WA_NUMBER`) and in the `wa.me` links in `index.html`.
 
 ## Image credits
