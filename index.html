@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/img/hero.webp">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
   <script>document.documentElement.classList.add("js")</script>
 
   <script type="application/ld+json">
@@ -415,46 +415,30 @@
           <p class="kicker">צרו קשר</p>
           <h2 id="contact-title">כאן מתחילים</h2>
           <p>הפנייה לטיפול היא צעד אמיץ, ולא תמיד פשוט. אני מזמין אתכם ליצור קשר לשיחה קצרה, שבה נכיר, נדבר על מה שמביא אתכם, ונבדוק יחד מהי הדרך המתאימה לכם.</p>
-          <ul class="contact__info">
-            <li>
-              <svg aria-hidden="true"><use href="#i-phone"/></svg>
-              <span><span class="contact__label">טלפון</span><a href="tel:+972528802452" dir="ltr">052-880-2452</a></span>
-            </li>
-            <li>
-              <svg aria-hidden="true"><use href="#i-pin"/></svg>
-              <span><span class="contact__label">מקום הטיפול</span><span>בדרום ובאונליין</span></span>
-            </li>
-            <li>
-              <svg aria-hidden="true"><use href="#i-mail"/></svg>
-              <span><span class="contact__label">דואר אלקטרוני</span><a href="mailto:sharonmiz5@gmail.com">sharonmiz5@gmail.com</a></span>
-            </li>
-            <li>
-              <svg aria-hidden="true"><use href="#i-play"/></svg>
-              <span><span class="contact__label">סרטונים ותכנים</span><a href="https://www.youtube.com/channel/UCx_fL6T5Vl_QzLoiJUu7wyg" target="_blank" rel="noopener">לערוץ היוטיוב שלי</a></span>
-            </li>
-          </ul>
-        </div>
-
-        <form class="contact__form reveal" id="wa-form" novalidate>
-          <h3 class="contact__form-title">השאירו הודעה</h3>
-          <div class="field">
-            <label for="f-name">שם</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="f-phone">טלפון</label>
-            <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr">
-          </div>
-          <div class="field">
-            <label for="f-msg">במה אוכל לעזור? <span class="optional">(לא חובה)</span></label>
-            <textarea id="f-msg" name="message" rows="4"></textarea>
-          </div>
           <div class="contact__actions">
-            <button class="btn btn--dark" type="submit"><svg class="btn__icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>שליחה בוואטסאפ</button>
+            <a class="btn btn--dark" href="https://wa.me/972528802452" data-wa="שלום שרון, אשמח לתאם שיחת היכרות" target="_blank" rel="noopener"><svg class="btn__icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>שליחה בוואטסאפ</a>
             <a class="btn btn--ghost" href="tel:+972528802452"><svg class="btn__icon" aria-hidden="true"><use href="#i-phone"/></svg>התקשרו עכשיו</a>
           </div>
-          <p class="form-error" id="form-error" role="alert" hidden>נא למלא שם כדי שאדע למי לחזור.</p>
-        </form>
+        </div>
+
+        <ul class="contact__info reveal">
+          <li>
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>
+            <span><span class="contact__label">טלפון</span><a href="tel:+972528802452" dir="ltr">052-880-2452</a></span>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-pin"/></svg>
+            <span><span class="contact__label">מקום הטיפול</span><span>בדרום ובאונליין</span></span>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-mail"/></svg>
+            <span><span class="contact__label">דואר אלקטרוני</span><a href="mailto:sharonmiz5@gmail.com">sharonmiz5@gmail.com</a></span>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-play"/></svg>
+            <span><span class="contact__label">סרטונים ותכנים</span><a href="https://www.youtube.com/channel/UCx_fL6T5Vl_QzLoiJUu7wyg" target="_blank" rel="noopener">לערוץ היוטיוב שלי</a></span>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
@@ -476,6 +460,6 @@
     <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
   </a>
 
-  <script src="main.js" defer></script>
+  <script src="main.js?v=2" defer></script>
 </body>
 </html>

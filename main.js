@@ -55,27 +55,6 @@
   }, { rootMargin: "-45% 0px -50% 0px" });
   document.querySelectorAll("main > section[id]").forEach((s) => spy.observe(s));
 
-  // Contact form -> WhatsApp message
-  const form = document.getElementById("wa-form");
-  const error = document.getElementById("form-error");
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const { name: nameInput, phone: phoneInput, message: messageInput } = form.elements;
-    const name = nameInput.value.trim();
-    const phone = phoneInput.value.trim();
-    const message = messageInput.value.trim();
-    if (!name) {
-      error.hidden = false;
-      nameInput.focus();
-      return;
-    }
-    error.hidden = true;
-    const lines = [`שלום שרון, שמי ${name}.`];
-    if (phone) lines.push(`טלפון: ${phone}`);
-    lines.push(message || "אשמח לתאם שיחת היכרות.");
-    window.open(waLink(lines.join("\n")), "_blank", "noopener");
-  });
-
   // Hide the floating WhatsApp button where it would duplicate on-screen CTAs (hero, contact)
   const fab = document.querySelector(".fab");
   const ctaZones = new Set();
