@@ -1,10 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#d1ded5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="21.5 3 286 286">
   <defs>
-    <g id="p"><path d="M32 32C27 25 27.5 14 32 8c4.5 6 5 17 0 24Z"/><path d="M32 30V11"/></g>
-  </defs>
-  <g fill="none" stroke="#383838" stroke-width="1.6" stroke-linejoin="round">
-    <use href="#p"/><use href="#p" transform="rotate(45 32 32)"/><use href="#p" transform="rotate(90 32 32)"/><use href="#p" transform="rotate(135 32 32)"/>
-    <use href="#p" transform="rotate(180 32 32)"/><use href="#p" transform="rotate(225 32 32)"/><use href="#p" transform="rotate(270 32 32)"/><use href="#p" transform="rotate(315 32 32)"/>
-  </g>
+      <linearGradient id="logo-ring" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e2f0e5"/><stop offset="1" stop-color="#cde5d4"/></linearGradient>
+      <linearGradient id="logo-teal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a9e74"/><stop offset=".52" stop-color="#2f7d50"/><stop offset="1" stop-color="#1f4d36"/></linearGradient>
+      <linearGradient id="logo-green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b3d8a8"/><stop offset=".55" stop-color="#6aac80"/><stop offset="1" stop-color="#2f7d50"/></linearGradient>
+      <linearGradient id="logo-leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c6e4b9"/><stop offset="1" stop-color="#3d8a5c"/></linearGradient>
+    </defs>
+
+      <circle cx="164.5" cy="146" r="143" fill="url(#logo-ring)"/>
+      <circle cx="164.5" cy="146" r="83" fill="#fff"/>
+      <path fill="url(#logo-teal)" d="M162.4 210.8C157.2 201.7 148.7 194.8 138.7 185.9C126.9 175.3 116.1 165.1 113.4 151.4C110.7 137.9 115.2 122.9 126.3 115.5C137.5 108 151.4 111.4 160.5 122C165.2 115.8 171 112.2 178 111.6C170 115 165.7 120.7 163.2 128C156.1 119.2 146.8 119.1 139.7 122.9C129 128.5 124.3 140.2 126 151.2C128 164.1 140.2 176.3 151.5 187C157.3 192.5 161.6 197.4 163 203.5C163.5 206.1 163.2 208.7 162.4 210.8Z"/>
+      <path fill="url(#logo-green)" d="M162 210.8C165 193.5 171.6 180.8 183.7 166.5C197.8 149.8 205 130.7 205.8 108.8C206.1 100.8 210.8 94.2 220 89.8C211.8 103.1 213.2 118.6 211.5 134.4C209.2 156.3 201.2 172 187.4 186.5C177.4 197 168.3 204.5 162 210.8Z"/>
+      <path fill="url(#logo-leaf)" d="M161.1 195.4C157.8 182.8 159.2 169.7 165.6 157.6C171.4 146.5 182.3 137 194.4 130.5C191 144.2 186 155 178.5 165.2C172.2 173.7 165.5 184.7 161.1 195.4Z"/>
+      <path d="M161.5 197.2C168.1 174.2 179.1 151.5 195.2 131.5" fill="none" stroke="#edf6ef" stroke-width="1.5" stroke-linecap="round" opacity=".72"/>
+      <path fill="url(#logo-teal)" d="M163.4 115C171 107.4 182.5 107 190 114C182.2 110.7 173 111.6 163.4 115Z"/>
+      <circle cx="193.8" cy="98.4" r="7.7" fill="url(#logo-teal)"/>
 </svg>
