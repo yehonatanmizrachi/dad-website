@@ -127,7 +127,7 @@ strong { font-weight: 500; color: var(--ink); }
 }
 /* RTL grid: column 1 is on the right */
 .hero__media { grid-column: 1; grid-row: 1; position: relative; overflow: hidden; }
-.hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 55% 50%; }
+.hero__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 56% 45%; }
 .hero__panel {
   grid-column: 2; grid-row: 1; background: var(--sage-100);
   display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
