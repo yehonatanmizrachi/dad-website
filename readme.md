@@ -34,6 +34,7 @@ Live at https://sharonmizrachi.com/ — Cloudflare builds from `main` on every p
 | Contact        | `#contact`      |
 
 - Contact is by WhatsApp (prefilled message) or phone; there is no form or backend.
+- Accessibility: `a11y.js` + the `.a11y` markup (on both pages) is the accessibility menu; `accessibility.html` is the legally required accessibility statement (הצהרת נגישות) — update its date when the site changes meaningfully.
 - WhatsApp number lives in `main.js` (`WA_NUMBER`) and in the `wa.me` links in `index.html`.
 
 ## Image credits
